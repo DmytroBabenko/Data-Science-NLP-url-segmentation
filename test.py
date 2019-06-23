@@ -33,7 +33,7 @@ trie = Trie.create_trie(words_dict)
 word_breaker = WordBreaker(trie)
 
 
-broken, words = word_breaker.word_break("businessweek29.5")
+words = word_breaker.word_break("businessweek29.5")
 print(words)
 
 

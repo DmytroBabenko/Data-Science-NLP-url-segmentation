@@ -46,6 +46,9 @@ class Trie:
         for level in range(size):
             index = self._get_index_of_char(key[level])
 
+            if index < 0 or index >= len(current.children):
+                return False
+
             if not current.children[index]:
                 return False
 
